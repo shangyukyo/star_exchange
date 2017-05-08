@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.1"
+lock "3.4.1"
 
 set :application, "star_exchange"
 set :repo_url, "git@github.com:shangyukyo/star_exchange.git"
@@ -60,15 +60,15 @@ namespace :deploy do
   ##############################################
   ######## First Time Deployment Begin ##########
 
-  # before :migrate, :initialize_database do
-  #   on roles(:web, :db, :app) do
-  #     within release_path do
-  #       with rails_env: 'production' do
-  #         execute :rake, 'db:create'
-  #       end
-  #     end
-  #   end
-  # end
+  before :migrate, :initialize_database do
+    on roles(:web, :db, :app) do
+      within release_path do
+        with rails_env: 'production' do
+          execute :rake, 'db:create'
+        end
+      end
+    end
+  end
 
 
   # after :finished, 'unicorn:force_reload'
