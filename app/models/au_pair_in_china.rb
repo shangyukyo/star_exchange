@@ -1,0 +1,2 @@
+class AuPairInChina < ApplicationRecord
+end

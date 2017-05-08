@@ -1,0 +1,2 @@
+class IntensiveChineseClass < ApplicationRecord
+end

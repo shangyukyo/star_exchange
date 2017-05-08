@@ -1,0 +1,2 @@
+class TeacherInChina < ApplicationRecord
+end
