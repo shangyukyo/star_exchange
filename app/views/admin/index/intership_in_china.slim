@@ -1,0 +1,78 @@
+.pd-15
+	.panel.panel-default
+		.panel-heading 		
+			i.fa.fa-reorder 
+			span.ml-10 Intership In China List
+
+		.panel-body
+			.table-responsive
+			  table.table
+			    thread
+			      tr.active
+			      	th First Name			      	
+			        th Last Name
+			        th Date of Birth
+			        th Gender   
+			        th Nationality
+			        th Email
+			        th Skype Id
+			        th Country
+			        th City
+			        th Phone
+			        th Preferred contact method
+			        th Preferred start year
+			        th Preferred start month
+			        th Preferred duration
+			        th Preferred city of stay
+			        th Chinese level
+			        th Program expectations
+			        th Are you a student or alumni of one of our partner schools?
+			        th How did you find out about Mandarin Bridge?
+
+			        th Area_of_interest
+
+			        th Mandarin_Classes
+			        th Apartment
+			        th Airport Pick Up	        
+			        th I would like to take part in an additional program after my internship:
+			        th I understand that there is a fee for this program/course.
+			        th I want to subscribe to the Newsletter
+			        th I hereby declare, that above given information is correct and that all submitted documents are genuine. I am aware of the general regulations for interns as stated on the Mandarin Bridge website and ensure that I fulfill the necessary requirements
+			        th I also agree with the terms of cooperation, which can be downloaded below.
+			        th Created at
+			        th #
+			    tbody		    	
+		        - @is.each do |i|
+
+		          tr
+		            td= i.first_name
+		            td= i.last_name
+		            td= i.date_of_birth
+		            td= i.gender
+		            td= i.nationality
+		            td= i.email
+		            td= i.skype_id
+		            td= i.country
+		            td= i.city
+		            td= i.phone
+		            td= i.preferred_contact_method
+		            td= i.preferred_start_year
+		            td= i.preferred_start_month
+		            td= i.preferred_duration
+		            td= i.preferred_city_of_stay
+		            td= i.chinese_level
+		            td= i.program_expectations
+		            td= i.are_you_a_student_or_alumni_of_one_of_our_partner_schools
+		            td= i.how_did_you_find_out_about_mandarin_bridge
+
+		            td= i.area_of_interest
+		            td= i.mandarin_classes
+		            td= i.apartment
+		            td= i.airport_pick_up
+		            td= i.take_part_in_an_additional_program
+		            td= i.declaration_1
+		            td= i.declaration_2
+		            td= i.declaration_3
+		            td= i.declaration_4
+		            td= i.created_at
+		            td #

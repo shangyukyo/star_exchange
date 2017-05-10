@@ -9,5 +9,21 @@ Rails.application.routes.draw do
   	resources :contact, only: [:create]
   	resources :teacher_in_china, only: [:create]
   	resources :intensive_chinese_class, only: [:create]
+
+    resources :intership_in_china, only: [:create]
+  end
+
+  scope :admin, module: 'admin' do 
+	  scope shallow_path: 'index',  controller: 'index' do
+	    get  :login
+	    post :login
+
+	    get :contact
+      get :au_pair_in_china
+      get :intensive_chinese_class
+      get :teacher_in_china
+      get :intership_in_china
+      
+	  end
   end
 end

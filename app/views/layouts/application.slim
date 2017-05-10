@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html
+  head
+    title Mandarin Bridge
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+  	.menu-bar
+
+      ul.nav.nav-pills.nav-stacked
+        li
+          a href="#{contact_path}"  class="#{params[:action] == 'contact' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Contact      
+        li
+          a href="#{au_pair_in_china_path}"  class="#{params[:action] == 'au_pair_in_china' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Au-pair In China
+        li
+          a href="#{intensive_chinese_class_path}"  class="#{params[:action] == 'intensive_chinese_class' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Intensive Chinese Classes
+        li
+          a href="#{teacher_in_china_path}" class="#{params[:action] == 'teacher_in_china' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Teacher In china
+        li
+          a href="#{intership_in_china_path}" class="#{params[:action] == 'intership_in_china' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Intership In China
+
+  	.main
+        - if true
+          .state-nav
+            .logo.pull-left
+              = image_tag "logostar.png", size: '30x30'
+              span.ml-10 汉语桥信息收集平台
+
+  		.content
+    		= yield
+

@@ -1,0 +1,78 @@
+.pd-15
+	.panel.panel-default
+		.panel-heading 		
+			i.fa.fa-reorder 
+			span.ml-10 Teacher In China List
+
+		.panel-body
+			.table-responsive
+			  table.table
+			    thread
+			      tr.active
+			      	th Family Name
+			        th Given Name
+			        th Date of Birth
+			        th Place of birth
+			        th Nationality
+			        th Gender
+			        th Country
+			        th Skype ID
+			        th Telephone
+			        th Email
+			        th What is the earliest time you could start?
+			        th What is the latest time you could start?
+			        th What is your preferred duration of stay? (months)
+			        th Between
+			        th And
+			        th Do you have any wishes in particular?
+			        th Highest held degree, Issuing institution, Date of completion
+			        th Only if already enrolled: Desired future degree, Institution, Estimated date of completion
+			        th Short summary of previous working experience. (Feel free to keep it short here as your full CV will be requested anyway.)
+			        th Previous, post-graduate working experience
+			        th English
+			        th How did you hear about us?
+			        th I agree that Mandarin Bridge and its partners use a simplifield profile for matching purposes on their websites
+			        th I agree that Mandarin Bridge and its partners use a simplifield profile in typical Chinese social media, e.g. Wechat/ Weixin.
+			        th I agree that Mandarin Bridge and its partners use a simplifield profile in social media, in general e.g. also on facebook.
+			        th This questionnaire has been completed:
+			        th I agree that my email address will be forwarded to other teachers.
+			        th I hereby declare, that above given information is correct and that all submitted docu­ments are genuine. I agree with the terms of cooperation, which can be downloaded from the Mandarin Bridge web­site.*
+			        th I also agree with the terms of cooperation, which can be downloaded above.
+			        th I agree that my pictures and personal information can be handed over to in­terested institutions for application purpose.
+			        th Created at
+			        th #
+			    tbody		    	
+		        - @ts.each do |t|
+		          tr
+		            td= t.family_name
+		            td= t.given_name
+		            td= t.date_of_birth
+		            td= t.place_of_birth
+		            td= t.nationality
+		            td= t.gender
+		            td= t.country
+		            td= t.skype_id
+		            td= t.telephone
+		            td= t.email
+		            td= t.earliest_time_you_start
+		            td= t.latest_time_you_start
+		            td= t.duration_of_stay
+		            td= t.between_started
+		            td= t.between_ended
+		            td= t.wishes_in_particular
+		            td= t.highest_held_degree
+		            td= t.desired_future_degree
+		            td= t.previous_working_experience
+		            td= t.post_graduate_working_experience
+		            td= t.english
+		            td= t.how_did_you_hear_about_us
+		            td= t.agree_use_a_simplifield_profile_for_matching_purposes
+		            td= t.agree_use_a_simplifield_profile_in_typical_chinese_social_media
+		            td= t.agree_use_a_simplifield_profile_in_social_media
+		            td= t.this_questionnaire_has_been_completed
+		            td= t.agree_my_email_will_be_forwarded_to_other_teachers
+		            td= t.i_hereby_declare
+		            td= t.agree_with_the_terms_of_cooperation
+		            td= t.agree_use_my_pictures_and_personal_information		            
+		            td= t.created_at
+		            td #

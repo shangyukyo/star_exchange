@@ -1,0 +1,2 @@
+class IntershipInChina < ApplicationRecord
+end

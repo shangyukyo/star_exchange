@@ -1,0 +1,65 @@
+.pd-15
+	.panel.panel-default
+		.panel-heading 		
+			i.fa.fa-reorder 
+			span.ml-10 Intensive Chinese Classes List
+
+		.panel-body
+			.table-responsive
+			  table.table
+			    thread
+			      tr.active
+			      	th First Name			      	
+			        th Last Name
+			        th Date of Birth
+			        th Gender   
+			        th Nationality
+			        th Email
+			        th Skype Id
+			        th Country
+			        th City
+			        th Phone
+			        th Preferred contact method
+			        th Preferred start year
+			        th Preferred start month
+			        th Preferred duration
+			        th Preferred city of stay
+			        th Chinese level
+			        th Program expectations
+			        th Are you a student or alumni of one of our partner schools?
+			        th How did you find out about Mandarin Bridge?
+			        th I want to add an additional program (Combine Beijing, Chengdu and Shanghai and/or combine Intensive Chinese with an Internship/Volunteer Program)
+			        th I understand that there is a fee for this program/course
+			        th I want to subscribe to the Newsletter
+			        th I also agree with the terms of cooperation, which can be downloaded below
+			        th Created at
+			        th #
+			    tbody		    	
+		        - @is.each do |i|
+
+		          tr
+		            td= i.first_name
+		            td= i.last_name
+		            td= i.date_of_birth
+		            td= i.gender
+		            td= i.nationality
+		            td= i.email
+		            td= i.skype_id
+		            td= i.country
+		            td= i.city
+		            td= i.phone
+		            td= i.preferred_contact_method
+		            td= i.preferred_start_year
+		            td= i.preferred_start_month
+		            td= i.preferred_duration
+		            td= i.preferred_city_of_stay
+		            td= i.chinese_level
+		            td= i.program_expectations
+		            td= i.are_you_a_student_or_alumni_of_one_of_our_partner_schools
+		            td= i.how_did_you_find_out_about_mandarin_bridge
+		            td= i.i_want_to_add_an_additional_program
+		            td= i.understand_there_is_a_fee_for_this_program
+		            td= i.i_want_to_subscribe_to_the_newsletter
+		            td= i.agree_with_the_terms_of_cooperation
+		            td= i.created_at
+		            td #

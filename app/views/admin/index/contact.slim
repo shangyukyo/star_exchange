@@ -1,0 +1,26 @@
+.pd-15
+	.panel.panel-default
+		.panel-heading 		
+			i.fa.fa-reorder 
+			span.ml-10 Contact List
+
+		.panel-body
+			.table-responsive
+			  table.table
+			    thread
+			      tr.active
+			      	th Name
+			        th Email
+			        th Interested
+			        th Message           
+			        th Created at
+			        th #
+			    tbody		    	
+		        - @contacts.each do |c|
+		          tr
+		            td= c.name	            	
+		            td= c.email
+		            td= c.interested
+		            td= c.message
+		            td= c.created_at
+		            td #
