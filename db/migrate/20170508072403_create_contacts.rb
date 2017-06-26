@@ -2,10 +2,10 @@ class CreateContacts < ActiveRecord::Migration[5.0]
   def change
     create_table :contacts do |t|
 
-    	t.string :name
-    	t.string :email
-    	t.string :interested
-    	t.string :message
+    	t.text :name
+    	t.text :email
+    	t.text :interested
+    	t.text :message
       t.timestamps
     end
   end

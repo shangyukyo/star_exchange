@@ -1,6 +1,6 @@
-class CreateTeacherInChinas < ActiveRecord::Migration[5.0]
+class CreateDeTeacherInChinas < ActiveRecord::Migration[5.0]
   def change
-    create_table :teacher_in_chinas do |t|
+    create_table :de_teacher_in_chinas do |t|
 
     	t.text :family_name
     	t.text :given_name
@@ -13,6 +13,7 @@ class CreateTeacherInChinas < ActiveRecord::Migration[5.0]
     	t.text :telephone
     	t.text :email
 
+    	t.text :in_which_program_would_you_like_to_take_part
     	t.text :earliest_time_you_start
     	t.text :latest_time_you_start
     	t.text :duration_of_stay

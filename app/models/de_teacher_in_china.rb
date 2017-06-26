@@ -1,0 +1,2 @@
+class DeTeacherInChina < ApplicationRecord
+end

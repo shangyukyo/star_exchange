@@ -1,42 +1,42 @@
 class CreateIntershipInChinas < ActiveRecord::Migration[5.0]
   def change
     create_table :intership_in_chinas do |t|
-    	t.string :your_program
-    	t.string :first_name
-    	t.string :last_name
-    	t.string :date_of_birth
-    	t.string :gender
-    	t.string :nationality
+    	t.text :your_program
+    	t.text :first_name
+    	t.text :last_name
+    	t.text :date_of_birth
+    	t.text :gender
+    	t.text :nationality
 
-    	t.string :email
-    	t.string :skype_id
-    	t.string :country
-    	t.string :city
-    	t.string :phone
-    	t.string :preferred_contact_method
+    	t.text :email
+    	t.text :skype_id
+    	t.text :country
+    	t.text :city
+    	t.text :phone
+    	t.text :preferred_contact_method
 
-    	t.string :preferred_start_year
-    	t.string :preferred_start_month
-    	t.string :preferred_duration
-    	t.string :preferred_city_of_stay
-    	t.string :chinese_level
-    	t.string :program_expectations
+    	t.text :preferred_start_year
+    	t.text :preferred_start_month
+    	t.text :preferred_duration
+    	t.text :preferred_city_of_stay
+    	t.text :chinese_level
+    	t.text :program_expectations
 
-    	t.string :are_you_a_student_or_alumni_of_one_of_our_partner_schools
-    	t.string :how_did_you_find_out_about_mandarin_bridge
+    	t.text :are_you_a_student_or_alumni_of_one_of_our_partner_schools
+    	t.text :how_did_you_find_out_about_mandarin_bridge
 
-    	t.string :area_of_interest
-    	t.string :resume
+    	t.text :area_of_interest
+    	t.text :resume
 
-    	t.string :mandarin_classes
-    	t.string :apartment
-    	t.string :airport_pick_up
-    	t.string :take_part_in_an_additional_program 
+    	t.text :mandarin_classes
+    	t.text :apartment
+    	t.text :airport_pick_up
+    	t.text :take_part_in_an_additional_program 
 
-    	t.string :declaration_1
-    	t.string :declaration_2
-    	t.string :declaration_3
-    	t.string :declaration_4
+    	t.text :declaration_1
+    	t.text :declaration_2
+    	t.text :declaration_3
+    	t.text :declaration_4
 
       t.timestamps
     end

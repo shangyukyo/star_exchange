@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   	resources :intensive_chinese_class, only: [:create]
 
     resources :intership_in_china, only: [:create]
+    resources :de_teacher_in_china, only: [:create]
   end
 
   scope :admin, module: 'admin' do 
@@ -23,7 +24,8 @@ Rails.application.routes.draw do
       get :intensive_chinese_class
       get :teacher_in_china
       get :intership_in_china
-      
+      get :de_teacher_in_china
+
 	  end
   end
 end

@@ -33,4 +33,9 @@ class Admin::IndexController < Admin::ApplicationController
 	def intership_in_china
 		@is = IntershipInChina.all.order('id desc')
 	end
+
+	def de_teacher_in_china
+		@dts = DeTeacherInChina.all.order('id desc')
+	end
+
 end
