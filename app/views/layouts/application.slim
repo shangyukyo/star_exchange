@@ -32,11 +32,22 @@ html
             i.fa.fa-list 
             span.ml-5 Intership In China
 
+
         li
           a href="#{de_teacher_in_china_path}" class="#{params[:action] == 'de_teacher_in_china' ? 'selected' : nil}"
             i.fa.fa-list 
             span.ml-5 
               | (德语) 实习教学
+
+        li
+          a href="#{language_volunteer_path}" class="#{params[:action] == 'language_volunteer' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Language Volunteer
+
+        li
+          a href="#{mandarin_summer_camp_path}" class="#{params[:action] == 'mandarin_summer_camp' ? 'selected' : nil}"
+            i.fa.fa-list 
+            span.ml-5 Mandarin Summer Camp
 
   	.main
         - if true

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170626033531) do
+ActiveRecord::Schema.define(version: 20170703025426) do
 
   create_table "au_pair_in_chinas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
     t.text     "name",                      limit: 65535
@@ -132,6 +132,34 @@ ActiveRecord::Schema.define(version: 20170626033531) do
     t.text     "declaration_4",                                             limit: 65535
     t.datetime "created_at",                                                              null: false
     t.datetime "updated_at",                                                              null: false
+  end
+
+  create_table "language_volunteers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+    t.text     "name",                      limit: 65535
+    t.text     "email",                     limit: 65535
+    t.text     "when_do_you_want_to_start", limit: 65535
+    t.text     "how_did_you_hear_about_us", limit: 65535
+    t.text     "birthday",                  limit: 65535
+    t.text     "nationality",               limit: 65535
+    t.text     "country",                   limit: 65535
+    t.text     "how_long_stay",             limit: 65535
+    t.text     "gender",                    limit: 65535
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+  end
+
+  create_table "mandarin_summer_camps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+    t.text     "name",                      limit: 65535
+    t.text     "email",                     limit: 65535
+    t.text     "when_do_you_want_to_start", limit: 65535
+    t.text     "how_did_you_hear_about_us", limit: 65535
+    t.text     "birthday",                  limit: 65535
+    t.text     "nationality",               limit: 65535
+    t.text     "country",                   limit: 65535
+    t.text     "how_long_stay",             limit: 65535
+    t.text     "gender",                    limit: 65535
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
   create_table "teacher_in_chinas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|

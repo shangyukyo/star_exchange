@@ -1,0 +1,2 @@
+class LanguageVolunteer < ApplicationRecord
+end

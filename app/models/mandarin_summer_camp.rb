@@ -1,0 +1,2 @@
+class MandarinSummerCamp < ApplicationRecord
+end

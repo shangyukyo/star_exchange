@@ -38,4 +38,11 @@ class Admin::IndexController < Admin::ApplicationController
 		@dts = DeTeacherInChina.all.order('id desc')
 	end
 
+	def mandarin_summer_camp
+		@mscs = MandarinSummerCamp.all.order('id desc')
+	end
+
+	def language_volunteer
+		@lvs = LanguageVolunteer.all.order('id desc')
+	end
 end

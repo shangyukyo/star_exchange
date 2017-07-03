@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
     resources :intership_in_china, only: [:create]
     resources :de_teacher_in_china, only: [:create]
+
+    resources :language_volunteer, only: [:create]
+    resources :mandarin_summer_camp, only: [:create]
   end
 
   scope :admin, module: 'admin' do 
@@ -25,7 +28,8 @@ Rails.application.routes.draw do
       get :teacher_in_china
       get :intership_in_china
       get :de_teacher_in_china
-
+      get :language_volunteer
+      get :mandarin_summer_camp
 	  end
   end
 end

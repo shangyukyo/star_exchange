@@ -1,0 +1,37 @@
+.pd-15
+	.panel.panel-default
+		.panel-heading 		
+			i.fa.fa-reorder 
+			span.ml-10 Mandarin Summer Camp
+
+		.panel-body
+			.table-responsive
+			  table.table
+			    thread
+			      tr.active
+			      	th Name
+			        th Email
+			        th Date of Birth
+			        th Nationality     
+			        th Country
+			        th When do you went to start
+			        th How did you hear about us
+			        th What is your preferred duration of stay? (Month)
+			        th Gender
+			        th Created at
+			        th #
+			    tbody		    	
+		        - @mscs.each do |a|
+
+		          tr
+		            td= a.name	            	
+		            td= a.email
+		            td= a.birthday
+		            td= a.nationality
+		            td= a.country
+		            td= a.when_do_you_want_to_start
+		            td= a.how_did_you_hear_about_us
+		            td= a.how_long_stay
+		            td= a.gender
+		            td= a.created_at
+		            td #
