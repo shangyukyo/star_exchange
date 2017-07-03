@@ -9,7 +9,7 @@ class Api::MandarinSummerCampController < Api::ApplicationController
     a.birthday = params["Date_of_birth"]
     a.nationality = params["Nationality"]
     a.country = params["Country"]
-    a.how_long_stay = params["What_is_your_preferred_duration_of_stay_months"]
+    a.how_long_stay = params["What_is_your_preferred_duration_of_stay_weeks"]
     a.gender = params["Gender"]
 
   	a.save
