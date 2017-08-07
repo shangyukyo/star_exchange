@@ -63,4 +63,4 @@
 		            td= i.agree_with_the_terms_of_cooperation
 		            td= i.created_at
 		            td
-		            	a.btn.btn-xs.btn-danger href="#{delete_intensive_chinese_class_path(id: i.id)}" 删除
+		            	a.btn.btn-xs.btn-danger href="#{delete_intensive_chinese_class_path(id: i.id)}" onclick="if(confirm('确认删除吗？')==false)return false;" 删除

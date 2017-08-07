@@ -76,4 +76,4 @@
 		            td= i.declaration_4
 		            td= i.created_at
 		            td
-		            	a.btn.btn-xs.btn-danger href="#{delete_intership_in_china_path(id: i.id)}" 删除
+		            	a.btn.btn-xs.btn-danger href="#{delete_intership_in_china_path(id: i.id)}" onclick="if(confirm('确认删除吗？')==false)return false;" 删除

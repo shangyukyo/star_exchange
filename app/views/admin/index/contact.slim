@@ -24,4 +24,4 @@
 		            td= c.message
 		            td= c.created_at
 		            td
-		            	a.btn.btn-xs.btn-danger href="#{delete_contact_path(id: c.id)}" 删除
+		            	a.btn.btn-xs.btn-danger href="#{delete_contact_path(id: c.id)}"  onclick="if(confirm('确认删除吗？')==false)return false;" 删除

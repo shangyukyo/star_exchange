@@ -79,4 +79,4 @@
 		            td= t.agree_use_my_pictures_and_personal_information		            
 		            td= t.created_at
 		            td
-		            	a.btn.btn-xs.btn-danger href="#{delete_de_teacher_in_china_path(id: t.id)}" 删除
+		            	a.btn.btn-xs.btn-danger href="#{delete_de_teacher_in_china_path(id: t.id)}" onclick="if(confirm('确认删除吗？')==false)return false;" 删除

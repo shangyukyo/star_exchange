@@ -35,4 +35,4 @@
 		            td= a.gender
 		            td= a.created_at
 		            td
-		            	a.btn.btn-xs.btn-danger href="#{delete_language_volunteer_path(id: a.id)}" 删除
+		            	a.btn.btn-xs.btn-danger href="#{delete_language_volunteer_path(id: a.id)}" onclick="if(confirm('确认删除吗？')==false)return false;" 删除
