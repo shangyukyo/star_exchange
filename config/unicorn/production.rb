@@ -1,8 +1,13 @@
 # Set your full path to application.
 application = "star_exchange"
-app_path = "~/www/#{application}"
-shared_path = "#{app_path}/shared"
-current_path = "#{app_path}/current"
+app_path = "/Users/zhangcan/Workspace/star_exchange"
+shared_path = "#{app_path}"
+current_path = "#{app_path}"
+
+# application = "star_exchange"
+# app_path = "~/www/#{application}"
+# shared_path = "#{app_path}/shared"
+# current_path = "#{app_path}/current"
 
 # Set unicorn options
 worker_processes 2

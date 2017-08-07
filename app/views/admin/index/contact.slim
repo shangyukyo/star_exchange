@@ -23,4 +23,5 @@
 		            td= c.interested
 		            td= c.message
 		            td= c.created_at
-		            td #
+		            td
+		            	a.btn.btn-xs.btn-danger href="#{delete_contact_path(id: c.id)}" 删除

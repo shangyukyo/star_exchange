@@ -30,6 +30,15 @@ Rails.application.routes.draw do
       get :de_teacher_in_china
       get :language_volunteer
       get :mandarin_summer_camp
+
+      get :delete_contact
+      get :delete_au_pair_in_china
+      get :delete_intensive_chinese_class
+      get :delete_teacher_in_china
+      get :delete_intership_in_china
+      get :delete_de_teacher_in_china
+      get :delete_language_volunteer
+      get :delete_mandarin_summer_camp
 	  end
   end
 end

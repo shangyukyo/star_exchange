@@ -45,4 +45,46 @@ class Admin::IndexController < Admin::ApplicationController
 	def language_volunteer
 		@lvs = LanguageVolunteer.all.order('id desc')
 	end
+
+
+	def delete_contact
+		Contact.find_by(id: params[:id]).destroy
+		redirect_to :back
+	end
+
+	def delete_au_pair_in_china
+		AuPairInChina.find_by(id: params[:id]).destroy
+		redirect_to :back
+	end
+
+	def delete_intensive_chinese_class
+		IntensiveChineseClass.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
+	def delete_teacher_in_china
+		TeacherInChina.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
+	def delete_intership_in_china
+		IntershipInChina.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
+	def delete_de_teacher_in_china
+		DeTeacherInChina.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
+	def delete_language_volunteer
+		LanguageVolunteer.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
+	def delete_mandarin_summer_camp
+		MandarinSummerCamp.find_by(id: params[:id]).destroy
+		redirect_to :back		
+	end
+
 end
