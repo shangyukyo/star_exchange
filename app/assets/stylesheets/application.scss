@@ -1,7 +1,10 @@
 @import "_helper";
 
 body {
-
+	
+	td {
+		word-wrap:break-word;
+	}
 
 	.menu-bar {				
 		float: left;
