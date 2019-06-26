@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.4.1"
 
-set :application, "star_exchange"
+set :application, "star_exchange_school"
 set :repo_url, "git@github.com:shangyukyo/star_exchange.git"
 
 # Default branch is :master
