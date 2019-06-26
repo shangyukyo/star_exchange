@@ -60,7 +60,7 @@
 #     # password: "please use keys"
 #   }
 
-set :deploy_to, '~/www/star_exchange/'
+set :deploy_to, '~/www/star_exchange_school/'
 
 # server '115.29.167.37',
 #   user: 'shopshow',
