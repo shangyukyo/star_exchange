@@ -73,15 +73,28 @@ set :deploy_to, '~/www/star_exchange_school/'
 #     password: 'Shopshow123456chuheridangwu'
 #   }
 
-server '47.93.245.206',
-  user: 'hanyuqiao',
+# server '47.93.245.206',
+#   user: 'hanyuqiao',
+#   roles: %w{web app db},
+#   ssh_options: {
+#     user: 'hanyuqiao', # overrides user setting above
+#     # keys: %w(/home/ssapp/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password)    
+#   }# server-based syntax
+
+
+server '47.104.101.73',
+  user: 'zgp',
   roles: %w{web app db},
   ssh_options: {
-    user: 'hanyuqiao', # overrides user setting above
+    user: 'zgp', # overrides user setting above
     # keys: %w(/home/ssapp/.ssh/id_rsa),
     forward_agent: false,
     auth_methods: %w(publickey password)    
   }# server-based syntax
+
+
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
