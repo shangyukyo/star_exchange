@@ -348,6 +348,7 @@ margin-top:0px;
 	}
 	#main .container .mod_article{
    margin-left:0px;
+   word-break: break-all;
 }
 	
 	
